@@ -5,7 +5,7 @@ require_relative "lib/taylors_scaffold/version"
 Gem::Specification.new do |spec|
   spec.name = "taylors_scaffold"
   spec.version = TaylorsScaffold::VERSION
-  spec.authors = ["PJ"]
+  spec.authors = ["Cassie"]
   spec.email = ["peter.wdj@gmail.com"]
 
   spec.summary = "TODO: Write a short summary, because RubyGems requires one."
@@ -13,8 +13,6 @@ Gem::Specification.new do |spec|
   spec.homepage = "TODO: Put your gem's website or public repo URL here."
   spec.license = "MIT"
   spec.required_ruby_version = ">= 2.6.0"
-
-  spec.metadata["allowed_push_host"] = "TODO: Set to your gem server 'https://example.com'"
 
   spec.metadata["homepage_uri"] = spec.homepage
   spec.metadata["source_code_uri"] = "TODO: Put your gem's public repo URL here."
@@ -31,8 +29,10 @@ Gem::Specification.new do |spec|
   spec.executables = spec.files.grep(%r{\Aexe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
-  # Uncomment to register a new dependency of your gem
-  # spec.add_dependency "example-gem", "~> 1.0"
+  spec.add_dependency 'activesupport', '>= 4.2'
+  spec.add_development_dependency 'pg', '~> 1.2.0'
+  spec.add_development_dependency 'pry'
+  spec.add_development_dependency 'pry-byebug', '~> 3.9.0'
 
   # For more information and examples about making a new gem, check out our
   # guide at: https://bundler.io/guides/creating_gem.html

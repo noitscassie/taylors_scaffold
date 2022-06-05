@@ -3,6 +3,7 @@
 require_relative "taylors_scaffold/version"
 
 module TaylorsScaffold
-  class Error < StandardError; end
-  # Your code goes here...
+  require 'active_support'
+  require 'taylors_scaffold/service'
+  require 'taylors_scaffold/error_reporter'
 end
