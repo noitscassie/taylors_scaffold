@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.authors = ["Cassie"]
   spec.email = ["peter.wdj@gmail.com"]
 
-  spec.summary = "TODO: Write a short summary, because RubyGems requires one."
-  spec.description = "TODO: Write a longer description or delete this line."
+  spec.summary = "Some boilerplate code that is useful across applications"
+  spec.description = "Concerns that can be used across Rails applications, useful for avoiding rewriting boilerplate code"
   spec.homepage = "https://github.com/isitpj/taylors_scaffold"
   spec.license = "MIT"
   spec.required_ruby_version = ">= 2.6.0"
